@@ -1,0 +1,363 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/burclar-page/Burclar-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.Burclar-Banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/burclar-page/Burclar-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.Burclar-Banner .Burclar-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Burclar-Banner .Burclar-Text-Content h2{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.Burclar-Card-All {
+    margin-top: 50px;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.Burclar-Card-All .Burclar-Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 250px;
+    border: 2px solid #3B3B3B;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    transition: all 0.6s;
+    margin: 0px 12px;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.75);
+}
+
+.Burclar-Card-All .Burclar-Card:hover {
+    border: 2px solid #FFC367;
+}
+
+.Burclar-Card-All .Burclar-Card:hover .Burclar-Card-Text-Content h2 {
+    color: #FFFFFF;
+}
+
+.Burclar-Card-All .Burclar-Card:hover::before {
+    filter: drop-shadow(0 0 0 #ff7300);
+}
+
+.Burclar-Card-All .Burclar-Card::before{
+    background-image: url('/img/burclar/Burc-Bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    content: '';
+    transition: all 0.6s;
+    filter: brightness(1000%);
+}
+
+.Burclar-Card-All .Burclar-Card::after{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 18px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: '';
+}
+
+.Burclar-Card-All #Burclar-Card-icon-bg-1::after{
+    background-image: url('/img/burclar/Akrep.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-2::after{
+    background-image: url('/img/burclar/Aslan.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-3::after{
+    background-image: url('/img/burclar/Balık.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-4::after{
+    background-image: url('/img/burclar/Basak.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-5::after{
+    background-image: url('/img/burclar/Boga.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-6::after{
+    background-image: url('/img/burclar/İkizler.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-7::after{
+    background-image: url('/img/burclar/koc.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-8::after{
+    background-image: url('/img/burclar/Kova.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-9::after{
+    background-image: url('/img/burclar/Oglak.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-10::after{
+    background-image: url('/img/burclar/Terazi.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-11::after{
+    background-image: url('/img/burclar/Yay.png');
+}
+.Burclar-Card-All #Burclar-Card-icon-bg-12::after{
+    background-image: url('/img/burclar/Yengec.png');
+}
+
+.Burclar-Card-All .Burclar-Card img{
+    margin-top: 35px;
+}
+
+.Burclar-Card-All .Burclar-Card .Burclar-Card-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.Burclar-Card-All .Burclar-Card .Burclar-Card-Text-Content h2 {
+    color: #FFC367;
+    transition: all 0.6s;
+}
+
+.Burclar-Card-All .Burclar-Card .Burclar-Card-Text-Content p {
+    color: #9D9D9D;
+    margin: 0;
+}
+
+
+.Burclar-Card-All .Burclar-Card .Burclar-Card-bg{
+    background-image: url('/img/burclar/Burclar-Card-Bg.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat:no-repeat;
+    position: absolute;
+    content: '';
+    top: -18px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    animation: 10s rotate linear infinite;
+    filter: brightness(10%) drop-shadow(0 0 0 #808080);
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.Tarot-All{
+    margin-top: 50px;
+}
+
+.Tarot-All .container{
+    position: relative;
+    overflow: hidden;
+}
+
+.Tarot-All .Tarot-All-bg{
+    background-image: url('/img/burclar/Tarot-All-Bg.png');
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: 120s Tarot-All-bg-rotate linear infinite;
+    z-index: -1;
+}
+
+@keyframes Tarot-All-bg-rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.Tarot-All .Tarot-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tarot-All .Tarot-Text-Content h4{
+    font-size: 25px;
+    color: rgba(255,163,90);
+    font-weight: 300;   
+    line-height: 20px;
+}
+
+.Tarot-All .Tarot-Text-Content h2{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 100px;
+    --e-global-typography-primary-font-family: "Josefin Sans";
+    font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+}
+
+.Tarot-All .Tarot-Text-Content p{
+    color: #A3A1A1;
+    font-size: 25px;
+    margin: 0px 0px 2px 0px;
+    font-weight:lighter;  
+    text-align: center;     
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+.Tarot-All .Tarot-Card-All{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+    height: 350px;
+    background-color: #FFFFFF;
+    margin: 0px 12px;
+    border-radius: 5px;
+    background-image: url('img/burclar/Tarot-Card-Bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation: 15s rigtandleft linear infinite alternate;
+    transition: all 0.3s;
+}
+
+@keyframes rigtandleft {
+    0% {
+      background-position-x: 0%;
+    }
+    100% {
+      background-position-x: 100%;
+    }
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card:hover{
+    background-color: #515151;
+    cursor: url(/img/burclar/Tarot-Card-Cursor.png),auto;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card:hover .Tarot-Card-Text-Content h2{
+    color: rgba(255, 163, 90);
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card:hover .Tarot-Card-Text-Content p{
+    color: #FFFFFF;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card:hover a{
+    background-color: rgba(255, 163, 90);
+    border: 2px solid rgba(255, 163, 90);
+    color: #000000;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card img{
+    width: 230px;
+    height: 123px;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card:hover img{ 
+    filter: invert(1);
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card .Tarot-Card-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card .Tarot-Card-Text-Content h2{
+   font-size: 22px;
+   margin: 10px 0px 20px;
+   color: #000000;
+   font-weight: 600;
+   transition: all 0.5s;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card .Tarot-Card-Text-Content p{
+    font-size: 15px;
+    color: #626161;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    line-height: 20px;
+    transition: all 0.5s;
+}
+
+.Tarot-All .Tarot-Card-All .Tarot-Card a{
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-weight: 600;
+    border: 2px solid #2A2A2A;
+    border-radius: 50px 50px 50px 50px;
+    padding: 8px 45px 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .Tarot-All .Tarot-All-bg {
+        background-size: 120%;
+        height: 66vh;
+        left: 0px;
+    }
+
+    .Tarot-All .Tarot-Card-All{
+        padding-bottom: 0px;
+    }
+}

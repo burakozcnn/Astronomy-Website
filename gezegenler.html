@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN (ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/img/navbar-img/Galaxy.png">
+    <link rel="stylesheet" href="/Navbar/navbar.css">
+    <link rel="stylesheet" href="/Footer/footer.css">
+    <link rel="stylesheet" href="/gezegenler.css">
+    <title>Astronomy Website</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark mt-5 mb-5 pb-3 pt-3" id="Navbar">
+        <div class="container">
+          <a href="/index.html"><img src="/img/navbar-img/Uzay.png" style="max-width: 120px;"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item"><a href="/index.html" class="nav-link me-3 ms-3">Anasayfa</a></li>
+              <li class="nav-item">
+                <a href="/galaksiler.html" class="nav-link me-3 ms-3 d-flex align-items-center justify-content-center">
+                  Galaksiler
+                  <i id="dropdownIcon" class="ms-2 dropdown-arrow fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-list">
+                  <li><a href="/gezegenler.html" class="nav-link active">Gezegenler</a></li>
+                  <hr>
+                  <li><a href="/yildizlar.html" class="nav-link">Yıldızlar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="/guncelhaberler.html" class="nav-link me-3 ms-3">Güncel Haberler</a></li>
+              <li class="nav-item"><a href="/burclar.html" class="nav-link me-3 ms-3">Burçlar</a></li>
+              <li class="nav-item user-dropdown">
+                <a class="nav-link me-3 ms-3 user-icon">
+                  <i class="fa-solid fa-user fa-lg"></i>
+                </a>
+                <ul class="dropdown-uyelik-list">
+                  <li><a href="/uyeol.html" class="nav-link">Register</a></li>
+                  <hr>
+                  <li><a href="/uyegiris.html" class="nav-link">Login</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </div>
+    <section class="Gezegenler-Banner">
+        <div class="Gezegenler-Text-Content">
+            <h2>Gezegenler</h2>
+        </div>
+    </section>
+    <section class="Gezegenler-Card-All">
+        <div class="container">
+            <div class="row mb-4 d-flex justify-content-center align-items-center">
+                <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="Gezegenler-Card-Inner">
+                        <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-1">
+                            <h2>Dünya</h2>
+                        </div>
+                        <div class="Gezegenler-Card-Back">
+                            <p>
+                              Dünya, Güneş Sistemi'nde Güneş'e en yakın üçüncü gezegen olup şu an için üzerinde yaşam ve sıvı su barındırdığı kesin olarak bilinen tek astronomik cisimdir. 
+                              Radyometrik tarihleme ve diğer kanıtlara göre 4,55 milyar yıldan fazla bir süre önce oluşmuştur. Dünya'nın yer çekimi, uzaydaki diğer nesnelerle, özellikle Güneş'le ve tek doğal uydusu Ay'la etkileşime girer.
+                              Dünya'nın dönme ekseni, yörünge düzlemine göre eğik olup bu eğiklik mevsimlerin oluşmasına neden olmaktadır. Dünya ile Ay arasındaki kütleçekimsel etkileşim; Dünya'nın eksenindeki yönelimi sabitler, gelgitlere neden olur ve dönmesini kademeli olarak yavaşlatır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                  <div class="Gezegenler-Card-Inner">
+                      <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-2">
+                          <h2>Jupiter</h2>
+                      </div>
+                      <div class="Gezegenler-Card-Back">
+                          <p>
+                            Jüpiter, Güneş Sistemi'nin en büyük gezegenidir. Güneş'ten uzaklığa göre beşinci sırada yer alır. Adını Roma mitolojisindeki tanrıların en büyüğü olan Jüpiter'den alır.
+                            Jüpiter'in atmosferi kütlece %76 hidrojen ve %24 helyumdan oluşur ve daha yoğun bir iç kısma sahiptir. Karbon , oksijen , kükürt , neon , amonyak , su buharı , fosfin , hidrojen sülfür ve hidrokarbonlar gibi eser elementler ve bileşikler içerir.
+                            Dış atmosfer, etkileşimli sınırları boyunca türbülans ve fırtınalar bulunan bir dizi enlemsel bantlara ayrılmıştır; bunun en belirgin sonucu, 1831'den beri kaydedilen dev bir fırtına olan Büyük Kırmızı Leke'dir.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="Gezegenler-Card-Inner">
+                    <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-3">
+                        <h2>Mars</h2>
+                    </div>
+                    <div class="Gezegenler-Card-Back">
+                        <p>
+                          Mars (Eski Türkçede Bakır Sokım, Merih), Güneş Sistemi'nin Güneş'ten itibaren dördüncü gezegeni. Roma mitolojisindeki savaş tanrısı Mars'a ithafen adlandırılmıştır. Yüzeyindeki yaygın demir oksitten dolayı kızılımsı bir görünüme sahip olduğu için "Kızıl Gezegen" olarak da bilinmektedir.
+                          İnce bir atmosferi olan Mars gerek Ay'daki gibi meteor kraterlerini, gerekse Dünya'daki gibi volkan, vadi, çöl ve kutup bölgelerini içeren çehresiyle bir karasal gezegendir. Ayrıca 2 adet uydusu bulunmaktadır.
+                          Mars’taki Olimpos Dağı , Güneş Sistemi’nde bilinen en yüksek dağdır ve Marineris Vadisi Valles Marineris, adı verilen kanyon en büyük kanyondur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Gezegenler-Card-Inner">
+                  <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-4">
+                      <h2>Merkür</h2>
+                  </div>
+                  <div class="Gezegenler-Card-Back">
+                      <p>
+                        Merkür, Güneş Sistemi'ndeki en küçük ve Güneş'e en yakın gezegendir. Adını, tanrıların habercisi olan antik Roma tanrısı Mercurius'tan almıştır. Bir karasal gezegen olarak sınıflandırılır.
+                        Yüzeyi, milyarlarca yıldır biriken sayısız çarpma olayının bir sonucu olarak yoğun şekilde kraterlerle kaplıdır. En büyük krateri olan Caloris Planitia, 1.550 km (960 mi) çapındadır ve gezegenin çapının (4.880 km veya 3.030 mi) üçte biri kadardır. 
+                        Dünya'nın uydusu Ay'a benzer şekilde Merkür'ün yüzeyi, bindirme faylarından kaynaklanan geniş bir uçurum sistemi (yarıklar) ve çarpma olayı kalıntıları tarafından oluşturulan parlak ışın sistemleri sergiler.
+                      </p>
+                  </div>
+              </div>
+           </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center align-items-center">
+          <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Gezegenler-Card-Inner">
+                  <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-5">
+                      <h2>Neptün</h2>
+                  </div>
+                  <div class="Gezegenler-Card-Back">
+                      <p>
+                        Neptün, Adını Roma deniz tanrısı Neptunus'ten alan, Güneş Sistemi'nin sekizinci, ve Güneş'e en uzak ve katı yüzeyi bulunmayan gezegenidir. Gaz gezegenler sınıfında yer alan Neptün, Jüpiter ve Satürn'e kıyasla farklı yapısından ötürü buz devi olarak da sınıflandırılır.
+                        Güneş sisteminin Uranüs ile beraber en soğuk iki gezegeninden biridir. Katı yüzeye sahip olmamakla birlikte gezegenin dış katmanı genel olarak hidrojen ve helyumdan oluşur.
+                        İç katmanında ise gezegenin kütlesinin çoğu kayalık bir çekirdeğin üzerindeki sıcak ve yoğun maddelerden (su, metan ve amonyak) oluşur.                      
+                        Güneş'e olan uzaklığı ortalama 30 Astronomik birimdir.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <div class="Gezegenler-Card-Inner">
+                <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-6">
+                    <h2>Satürn</h2>
+                </div>
+                <div class="Gezegenler-Card-Back">
+                    <p>
+                      Satürn veya Eski Türkçedeki adıyla Sekentir ya da Sekendiz, Güneş'e en yakın altıncı gezegen ve Jüpiter'den sonra Güneş Sistemi'ndeki en büyük ikinci gezegendir.
+                      Ortalama yarıçapı Dünya'nın yaklaşık dokuz buçuk katı olan bir gaz devidir. Dünya'nın ortalama yoğunluğunun yalnızca sekizde birine sahiptir, ancak Dünya'dan 95 kat daha büyüktür.
+                      Gezegen, daha az miktarda kayalık döküntü ve toz ile esas olarak buz parçacıklarından oluşan parlak ve geniş bir halka sistemine sahiptir.
+                      Satürn, üst atmosferindeki amonyak kristalleri nedeniyle soluk sarı bir renk tonuna sahiptir. Ayrıca Satürn'deki rüzgar hızları saatte 1.800 kilometre/saat ulaşabilir.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="Gezegenler-Card-Inner">
+              <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-7">
+                  <h2>Uranüs</h2>
+              </div>
+              <div class="Gezegenler-Card-Back">
+                  <p>
+                    Uranüs, Güneş'e yakınlık bakımından yedinci gezegendir. Gazlı, camgöbeği renginde bir buz devidir. Gezegen buz, uçucu maddelerden, su, amonyak ve metandan oluşur.
+                    Gezegenin atmosferi karmaşık katmanlı bir bulut yapısına sahiptir ve tüm Güneş Sistemi gezegenleri arasında -224 °C ile en düşük minimum sıcaklığa sahiptir.
+                    Uranüs uçucu manto tabakasının içinde kayalık bir çekirdek ve onu çevreleyen kalın bir hidrojen ve helyum atmosferi bulunmaktadır.
+                    Uranüs'ün atmosferinde 900 km/sa en yüksek rüzgâr hızı, kutup örtüsündeki değişimler ve düzensiz bulut oluşumu gibi açıklanamayan birçok iklim olayı vardır.
+                  </p>
+              </div>
+          </div>
+       </div>
+       <div class="Gezegenler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="Gezegenler-Card-Inner">
+             <div class="Gezegenler-Card-Front" id="Gezegenler-Card-Front-8">
+                <h2>Venüs</h2>
+             </div>
+             <div class="Gezegenler-Card-Back">
+                <p>
+                  Venüs, Güneş Sistemi'nde Güneş'e uzaklık bakımından ikinci sıradaki, sıcaklık bakımından ise birinci sıradaki gezegendir.
+                  Güneşe uzaklık bakımından ikinci sırada olmasına rağmen en sıcak gezegen olmasının nedeni de atmosferinin gelen güneş ışınlarının dışarı çıkmasına izin vermemesidir.
+                  Ayrıca Zühre, Çolpan veya Çoban Yıldızı olarak da bilinir. Bu gezegen adını Eski Roma tanrıçası Venüs (Eski Yunan Mitolojisi'nde Afrodit)'ten almıştır.
+                  Venüs, kendi ekseni etrafında, Güneş Sistemi'ndeki diğer tüm gezegenlerin aksi istikametinde döner. Güneş etrafındaki dönüşünü 224,7 Dünya gününde tamamlar.
+                  Venüs'ün astronomik sembolü ise kadınlık sembolü ile aynıdır.
+                </p>
+             </div>
+          </div>
+         </div>
+        </div>
+       </div>
+    </section>
+    <section class="Footer-Section">
+        <footer class="Footer">
+          <div class="container">
+          <div class="Footer-İcons">
+              <a href=""><img src="/img/footer-img/Twitter.png"></a>
+              <a href=""><img src="/img/footer-img/Youtube.png"></a>
+              <a href=""><img src="/img/footer-img/Dc.png"></a>
+              <a href=""><img src="/img/footer-img/Insta.png"></a>
+          </div>
+          <hr id="hr-1">
+          <div class="Footer-Text-Content">
+            <p>"Uzay ve evrenin sırları hala keşfedilmeyi bekliyor. Uzay turizmi belki gelecek nesillerin uzaya gitmesini sağlayacak olsa da şimdilik Dünya dediğimiz büyük mavi küreden oraya bakmakla yetineceğiz.
+            Ancak evrenin derinliklerini görebileceğimiz büyük teleskoplar yüksek çözünürlüklü görüntülerin bize ulaşmasını sağlıyor. Özellikle kış aylarında evden çıkmayanlar bu 6 harika astronomi sitesiyle uzayın derinliklerini keşfedebilir."</p>
+          </div>
+          <hr id="hr-2">
+          <div class="Footer-Menu-All row d-flex align-items-center justify-content-center">
+              <div class="Footer-Gezegenler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Gezegenler</h2>
+                <li><a href="">Dünya</a></li>
+                <li><a href="">Jupiter</a></li>
+                <li><a href="">Mars</a></li>
+                <li><a href="">Merkür</a></li>
+                <li><a href="">Neptün</a></li>
+                <li><a href="">Satürn</a></li>
+                <li><a href="">Uranüs</a></li>
+                <li><a href="">Venüs</a></li>
+              </div>
+              <div class="Footer-Yildizlar-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Yıldızlar</h2>
+                <li><a href="">Güneş</a></li>
+                <li><a href="">Uy-Scuti</a></li>
+                <li><a href="">Alpha Centuari</a></li>
+                <li><a href="">Betelgeuse</a></li>
+                <li><a href="">Canopus</a></li>
+                <li><a href="">La Superba</a></li>
+                <li><a href="">R136A1</a></li>
+                <li><a href="">Rigel</a></li>
+            </div>
+            <div class="Footer-Haberler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2 class="Footer-Haberler-Menu-h2">Güncel Haberler</h2>
+                <div class="row mb-1">
+                    <div class="Footer-Haberler-Menu-Img-1 col-md-4">
+                       <img src="/img/footer-img/Haber8.jpg">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-1 col-md-8">
+                        <h2>Mars'ta su bulundu!!</h2>
+                        <p>31 Temmuz 2008'de NASA'nın Phoenix Mars iniş aracı, Kızıl Gezegen'de
+                        Dünya'daki su ile aynı elementleri içeren ve su buzunun varlığını doğruladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="Footer-Haberler-Menu-Img-2 col-md-4">
+                       <img src="/img/footer-img/Haber1.png">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-2 col-md-8">
+                        <h2>Perseverance'nin Yılı</h2>
+                        <p>UPI’nin haberine göre, Mars’ta geçirdiği 1 yıl içerisinde
+                        Perseverance,gezegenin kuzey bölgesindeki Jezero Krateri'nin zemininde 6 kaya örneği de topladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Footer-İletisim-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>İletişim</h2>
+                <div class="Footer-İletisim-Menu-All">
+                  <a href="" class="iletisim-mail"><img src="/img/footer-img/Mail.png">burkkozcnn@gmail.com</a> 
+                  <div class="Footer-İletisim-Menu-Img">
+                    <img src="/img/footer-img/Konum.png">
+                  </div>
+                    <div class="Footer-İletisim-Menu-Content">
+                      <a class="iletisim-adres" href="#">
+                        Hamidiye Mahallesi, Huzur Sokak,
+                        Osmangazi Caddesi, Kat: 6, No: 13,
+                        İstanbul/Kağıthane
+                      </a> 
+                    </div> 
+                </div> 
+            </div>
+          </div>
+          <hr id="hr-7">
+          <div class="info">
+            <span>" © 2025 Uzay.org - Burak Özcan tarafından yapılmıştır. "</span>
+          </div>
+         </div>
+       </footer>
+    </section>
+    <script src="/Navbar/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+      <!-- Font Awesome CDN (ikonlar için) -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="icon" href="/img/navbar-img/Galaxy.png">
+      <link rel="stylesheet" href="/Navbar/navbar.css">
+      <link rel="stylesheet" href="/Footer/footer.css">
+      <link rel="stylesheet" href="/guncelhaberler.css">
+      <title>Astronomy Website</title>
+    </head>
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark mt-5 mb-5 pb-3 pt-3" id="Navbar">
+        <div class="container">
+          <a href="/index.html"><img src="/img/navbar-img/uzay.png" style="max-width: 120px;"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item"><a href="/index.html" class="nav-link me-3 ms-3">Anasayfa</a></li>
+              <li class="nav-item">
+                <a href="/galaksiler.html" class="nav-link me-3 ms-3 d-flex align-items-center justify-content-center">
+                  Galaksiler
+                  <i id="dropdownIcon" class="ms-2 dropdown-arrow fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-list">
+                  <li><a href="/gezegenler.html" class="nav-link">Gezegenler</a></li>
+                  <hr>
+                  <li><a href="/yildizlar.html" class="nav-link">Yıldızlar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="/guncelhaberler.html" class="nav-link me-3 ms-3 active">Güncel Haberler</a></li>
+              <li class="nav-item"><a href="/burclar.html" class="nav-link me-3 ms-3">Burçlar</a></li>
+              <li class="nav-item user-dropdown">
+               <a class="nav-link me-3 ms-3 user-icon">
+                 <i class="fa-solid fa-user fa-lg"></i>
+               </a>
+               <ul class="dropdown-uyelik-list">
+                 <li><a href="/uyeol.html" class="nav-link">Register</a></li>
+                 <hr>
+                 <li><a href="/uyegiris.html" class="nav-link">Login</a></li>
+               </ul>
+             </li> 
+            </ul>
+          </div>
+        </div>
+    </div>
+    <section class="Guncelhaberler-Banner">
+        <div class="Guncelhaberler-Text-Content">
+            <h2>Haberler</h2>
+        </div>
+    </section>
+    <section class="Guncelhaberler-Card-All">
+       <div class="container">
+          <div class="row mb-4 d-flex justify-content-center align-items-center">
+              <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                 <div class="Guncelhaberler-Card-Bg-Container">
+                    <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-1">
+                    </div>
+                 </div>
+                 <div class="Guncelhaberler-Card-Content">
+                    <h2>Perseverance'ın Yılı</h2>
+                    <p> UPI’nin haberine göre, Mars’ta geçirdiği 1 yıl içerisinde kendi sistemlerini ve Ingenuity helikopterinin sistemlerini deneyen Perseverance,
+                        ayrıca gezegenin kuzey bölgesindeki Jezero Krateri'nin zemininde 6 kaya örneği de topladı.
+                    </p>
+                 </div>
+              </div>
+              <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="Guncelhaberler-Card-Bg-Container">
+                   <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-2">
+                   </div>
+                </div>
+                <div class="Guncelhaberler-Card-Content">
+                   <h2>Üçüz Galaksiler</h2>
+                   <p> Üç galaksi birleşimi olarak da bilinen bu olay, üç galaksinin birbirini gittikçe daha da yakına çekerek karşılıklı yerçekimi kuvvetleriyle parçalaması sonucu meydana geliyor. 
+                       Bu durum görenleri adeta şaşkına uğrattı.
+                   </p>
+                </div>
+             </div>
+             <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="Guncelhaberler-Card-Bg-Container">
+                   <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-3">
+                   </div>
+                </div>
+                <div class="Guncelhaberler-Card-Content">
+                   <h2>Gizemli Nesne</h2>
+                   <p> NASA’nın Mars keşif aracı Perseverance yaptığı gözlemlerde “Kafatası Tepesi” adı verilen sıra dışı bir kaya yapısı keşfetti. 
+                       Kaya, göz yuvasına benzeyen girintisi ve koyu rengiyle bilim dünyasında şaşkınlık yarattı.
+                   </p>
+                </div>
+             </div>
+             <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="Guncelhaberler-Card-Bg-Container">
+                   <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-4">
+                   </div>
+                </div>
+                <div class="Guncelhaberler-Card-Content">
+                   <h2>Mars Simülasyonu</h2>
+                   <p> Tesla ve SpaceX CEO'su Elon Musk, 2030'dan itibaren başlatılması beklenen Mars gezegenine yönelik insanlı görevin simüle edildiği bir animasyon paylaştı. 
+                       Musk, videoya yer verdiği Twitter paylaşımında gösterdi.
+                   </p>
+                </div>
+             </div>
+          </div>
+          <div class="row mt-4 d-flex justify-content-center align-items-center">
+            <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+               <div class="Guncelhaberler-Card-Bg-Container">
+                  <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-5">
+                  </div>
+               </div>
+               <div class="Guncelhaberler-Card-Content">
+                  <h2>SpaceX Görevi</h2>
+                  <p> Independent Türkçe'nin haberine göre; Isaacman'a emekli ABD Hava Kuvvetleri savaş pilotu Scott Poteet, SpaceX operasyon mühendisi Sarah Gillis ve gemide sağlık görevlisi rolünü üstelenecek mühendis Anna Menon katılacak. 
+                      Bu isimlerden ikisi ilk ticari uzay yürüyüşüne çıkacak.
+                  </p>
+               </div>
+            </div>
+            <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Guncelhaberler-Card-Bg-Container">
+                 <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-6">
+                 </div>
+              </div>
+              <div class="Guncelhaberler-Card-Content">
+                 <h2>Kaotik Görüntü</h2>
+                 <p> Hem Dünya'da hem de Mars'ta görülebilen ve yüzeydeki tozları birbirine katan hortumlara toz şeytanı ismi veriliyor. Bunlar, diğer hortumlardan farklı olarak bulutlardan aşağı doğru değil, yerden yukarı doğru oluşuyor. 
+                     Independent Türkçe'nin haberine göre; uzay ajansı yoktur.
+                 </p>
+              </div>
+           </div>
+           <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Guncelhaberler-Card-Bg-Container">
+                 <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-7">
+                 </div>
+              </div>
+              <div class="Guncelhaberler-Card-Content">
+                 <h2>2 yeni Güneş görevi</h2>
+                 <p>NASA’dan dün yapılan açıklamada, Güneş’in dinamiklerini, Güneş-Dünya bağlantısını ve sürekli değişen uzay ortamını anlamaya yardımcı olmasına yönelik MUSE ve HelioSwarm olarak adlandırılan iki yeni Güneş görevi seçtiğini duyurdu.
+                    Bu görevlerin, evren hakkında daha derin bilgiler sağlayacağı ifade edildi.
+                 </p>
+              </div>
+           </div>
+           <div class="Guncelhaberler-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Guncelhaberler-Card-Bg-Container">
+                 <div class="Guncelhaberler-Card-bg" id="Guncelhaberler-Card-bg-8">
+                 </div>
+              </div>
+              <div class="Guncelhaberler-Card-Content">
+                 <h2>Marsta Su Bulundu</h2>
+                 <p>NASA'nın 2018 yılında kızıl gezegene inen Mars Insight aracının verileri üzerinde yapılan yeni bir analizin sonucunda sıvı su keşfedildi.
+                    Mars Insight aracında bulunan sismograf gezegendeki sarsıntıları kaydetmişti. Bu depremleri ve gezegenin kabuğunun hareketlerini inceleyen ekip, sıvı suyun "sismik sinyallerini" buldu.
+                 </p>
+              </div>
+           </div>
+        </div>
+       </div>
+    </section>
+    <section class="Footer-Section">
+        <footer class="Footer">
+          <div class="container">
+          <div class="Footer-İcons">
+              <a href=""><img src="/img/footer-img/twitter.png"></a>
+              <a href=""><img src="/img/footer-img/youtube.png"></a>
+              <a href=""><img src="/img/footer-img/dc.png"></a>
+              <a href=""><img src="/img/footer-img/insta.png"></a>
+          </div>
+          <hr id="hr-1">
+          <div class="Footer-Text-Content">
+            <p>"Uzay ve evrenin sırları hala keşfedilmeyi bekliyor. Uzay turizmi belki gelecek nesillerin uzaya gitmesini sağlayacak olsa da şimdilik Dünya dediğimiz büyük mavi küreden oraya bakmakla yetineceğiz.
+            Ancak evrenin derinliklerini görebileceğimiz büyük teleskoplar yüksek çözünürlüklü görüntülerin bize ulaşmasını sağlıyor. Özellikle kış aylarında evden çıkmayanlar bu 6 harika astronomi sitesiyle uzayın derinliklerini keşfedebilir."</p>
+          </div>
+          <hr id="hr-2">
+          <div class="Footer-Menu-All row d-flex align-items-center justify-content-center">
+              <div class="Footer-Gezegenler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Gezegenler</h2>
+                <li><a href="">Dünya</a></li>
+                <li><a href="">Jupiter</a></li>
+                <li><a href="">Mars</a></li>
+                <li><a href="">Merkür</a></li>
+                <li><a href="">Neptün</a></li>
+                <li><a href="">Satürn</a></li>
+                <li><a href="">Uranüs</a></li>
+                <li><a href="">Venüs</a></li>
+              </div>
+              <div class="Footer-Yildizlar-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Yıldızlar</h2>
+                <li><a href="">Güneş</a></li>
+                <li><a href="">Uy-Scuti</a></li>
+                <li><a href="">Alpha Centuari</a></li>
+                <li><a href="">Betelgeuse</a></li>
+                <li><a href="">Canopus</a></li>
+                <li><a href="">La Superba</a></li>
+                <li><a href="">R136A1</a></li>
+                <li><a href="">Rigel</a></li>
+            </div>
+            <div class="Footer-Haberler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2 class="Footer-Haberler-Menu-h2">Güncel Haberler</h2>
+                <div class="row mb-1">
+                    <div class="Footer-Haberler-Menu-Img-1 col-md-4">
+                        <img src="/img/footer-img/Haber8.jpg">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-1 col-md-8">
+                        <h2>Mars'ta su bulundu!!</h2>
+                        <p>31 Temmuz 2008'de NASA'nın Phoenix Mars iniş aracı, Kızıl Gezegen'de
+                        Dünya'daki su ile aynı elementleri içeren ve su buzunun varlığını doğruladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="Footer-Haberler-Menu-Img-2 col-md-4">
+                        <img src="/img/footer-img/Haber1.png">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-2 col-md-8">
+                        <h2>Perseverance'nin Yılı</h2>
+                        <p>UPI’nin haberine göre, Mars’ta geçirdiği 1 yıl içerisinde
+                        Perseverance,gezegenin kuzey bölgesindeki Jezero Krateri'nin zemininde 6 kaya örneği de topladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Footer-İletisim-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>İletişim</h2>
+                <div class="Footer-İletisim-Menu-All">
+                  <a href="" class="iletisim-mail"><img src="/img/footer-img/mail.png">burkkozcnn@gmail.com</a> 
+                  <div class="Footer-İletisim-Menu-Img">
+                    <img src="/img/footer-img/konum.png">
+                  </div>
+                    <div class="Footer-İletisim-Menu-Content">
+                      <a class="iletisim-adres" href="#">
+                        Hamidiye Mahallesi, Huzur Sokak,
+                        Osmangazi Caddesi, Kat: 6, No: 13,
+                        İstanbul/Kağıthane
+                      </a> 
+                    </div> 
+                </div> 
+            </div>
+          </div>
+          <hr id="hr-7">
+          <div class="info">
+            <span>" © 2025 Uzay.org - Burak Özcan tarafından yapılmıştır. "</span>
+          </div>
+         </div>
+       </footer>
+    </section>
+    <script src="/Navbar/navbar.js"></script>
+</body>
+</html>

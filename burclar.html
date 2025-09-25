@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <!-- Font Awesome CDN (ikonlar için) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="icon" href="/img/navbar-img/Galaxy.png">
+        <link rel="stylesheet" href="/Navbar/navbar.css">
+        <link rel="stylesheet" href="/Footer/footer.css">
+        <link rel="stylesheet" href="/burclar.css">
+        <title>Astronomy Website</title>
+      </head>
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark mt-5 mb-5 pb-3 pt-3" id="Navbar">
+        <div class="container">
+          <a href="/index.html"><img src="/img/navbar-img/Uzay.png" style="max-width: 120px;"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item"><a href="/index.html" class="nav-link me-3 ms-3">Anasayfa</a></li>
+              <li class="nav-item">
+                <a href="/galaksiler.html" class="nav-link me-3 ms-3 d-flex align-items-center justify-content-center">
+                  Galaksiler
+                  <i id="dropdownIcon" class="ms-2 dropdown-arrow fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-list">
+                  <li><a href="/gezegenler.html" class="nav-link">Gezegenler</a></li>
+                  <hr>
+                  <li><a href="/yildizlar.html" class="nav-link">Yıldızlar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="/guncelhaberler.html" class="nav-link me-3 ms-3">Güncel Haberler</a></li>
+              <li class="nav-item"><a href="/burclar.html" class="nav-link me-3 ms-3 active">Burçlar</a></li>
+              <li class="nav-item user-dropdown">
+                <a class="nav-link me-3 ms-3 user-icon">
+                  <i class="fa-solid fa-user fa-lg"></i>
+                </a>
+                <ul class="dropdown-uyelik-list">
+                  <li><a href="/uyeol.html" class="nav-link">Register</a></li>
+                  <hr>
+                  <li><a href="/uyegiris.html" class="nav-link">Login</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </div>
+    <section class="Burclar-Banner">
+        <div class="Burclar-Text-Content">
+            <h2>Burçlar</h2>
+        </div>
+    </section>
+    <section class="Burclar-Card-All">
+       <div class="container">
+          <div class="row mb-4 d-flex justify-content-center align-items-center">
+              <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-1">
+                <div class="Burclar-Card-bg"></div>
+                 <img src="/img/burclar/Akrep-pp.png">
+                  <div class="Burclar-Card-Text-Content">
+                      <h2>Akrep</h2>
+                      <p>23 Ekim - 21 Kasım</p>
+                  </div>
+              </div>
+              <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-2">
+                <div class="Burclar-Card-bg"></div>
+                <img src="/img/burclar/Aslan-pp.png">
+                 <div class="Burclar-Card-Text-Content">
+                     <h2>Aslan</h2>
+                     <p>22 Haziran - 20 Temmuz</p>
+                 </div>
+              </div>
+              <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-3">
+                <div class="Burclar-Card-bg"></div>
+                <img src="/img/burclar/Balık-pp.png">
+                 <div class="Burclar-Card-Text-Content">
+                     <h2>Balık</h2>
+                     <p>18 Şubat - 20 Mart</p>
+                 </div>
+              </div>
+              <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-4">
+                <div class="Burclar-Card-bg"></div>
+                <img src="/img/burclar/Basak-pp.png">
+                 <div class="Burclar-Card-Text-Content">
+                     <h2>Başak</h2>
+                     <p>23 Ağustos - 23 Eylül</p>
+                 </div>
+              </div>
+          </div>
+          <div class="row mt-4 mb-4 d-flex justify-content-center align-items-center">
+            <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-5">
+              <div class="Burclar-Card-bg"></div>
+               <img src="/img/burclar/Boga-pp.png">
+                <div class="Burclar-Card-Text-Content">
+                    <h2>Boğa</h2>
+                    <p>20 Nisan - 20 Mayıs</p>
+                </div>
+            </div>
+            <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-6">
+              <div class="Burclar-Card-bg"></div>
+              <img src="/img/burclar/İkizler-pp.png">
+               <div class="Burclar-Card-Text-Content">
+                   <h2>İkizler</h2>
+                   <p>21 Mayıs - 21 Haziran</p>
+               </div>
+            </div>
+            <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-7">
+              <div class="Burclar-Card-bg"></div>
+              <img src="/img/burclar/Koc-pp.png">
+               <div class="Burclar-Card-Text-Content">
+                   <h2>Koç</h2>
+                   <p>21 Mart - 20 Nisan</p>
+               </div>
+            </div>
+            <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-8">
+              <div class="Burclar-Card-bg"></div>
+              <img src="/img/burclar/Kova-pp.png">
+               <div class="Burclar-Card-Text-Content">
+                   <h2>Kova</h2>
+                   <p>21 Ocak - 19 Şubat</p>
+               </div>
+            </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center align-items-center">
+          <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-9">
+            <div class="Burclar-Card-bg"></div>
+             <img src="/img/burclar/Oglak-pp.png">
+              <div class="Burclar-Card-Text-Content">
+                  <h2>Oğlak</h2>
+                  <p>22 Aralık - 20 Ocak</p>
+              </div>
+          </div>
+          <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-10">
+            <div class="Burclar-Card-bg"></div>
+            <img src="/img/burclar/Terazi-pp.png">
+             <div class="Burclar-Card-Text-Content">
+                 <h2>Terazi</h2>
+                 <p>23 Eylül - 22 Ekim</p>
+             </div>
+          </div>
+          <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-11">
+            <div class="Burclar-Card-bg"></div>
+            <img src="/img/burclar/Yay-pp.png">
+             <div class="Burclar-Card-Text-Content">
+                 <h2>Yay</h2>
+                 <p>23 Kasım - 21 Aralık</p>
+             </div>
+          </div>
+          <div class="Burclar-Card mb-3 col-sm-12 col-md-6 col-lg-3" id="Burclar-Card-icon-bg-12">
+            <div class="Burclar-Card-bg"></div>
+            <img src="/img/burclar/Yengec-pp.png">
+             <div class="Burclar-Card-Text-Content">
+                 <h2>Yengeç</h2>
+                 <p>22 Haziran - 22 Temmuz</p>
+             </div>
+          </div>
+       </div>
+     </div>
+    </section>
+    <section class="Tarot-All">
+     <div class="container">
+      <div class="Tarot-All-bg"></div>
+      <div class="Tarot-Text-Content">
+        <h4>Falınıza Bakalım !</h4>
+        <h2>Tarot</h2>
+        <p>Tarot kartları hayatımıza dair faydalı bilgiler sağlar ve aynı zamanda fal aracı olarak da kullanılabilir.<br>
+         Tarot kartları içsel sorunlarınıza cevap bulmanızı sağlayarak mücadelelerinizle yüzleşmenize yardımcı olabilir.<br>
+         Doğru kartlar genellikle doğru kişilere ulaşır; bu da, kartınızın ne olacağını etkileyemeyeceğiniz anlamına gelir.</p>
+      </div>
+      <div class="Tarot-Card-All">
+        <div class="row mt-4 mb-4 d-flex justify-content-center align-items-center">
+          <div class="Tarot-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <img src="/img/burclar/Tarot-Card-İmg-1.png">
+            <div class="Tarot-Card-Text-Content">
+              <h2>Ayın Sırrı</h2> 
+              <p>Bu kart, hayatındaki döngüleri ve tekrar eden durumları fark etmeni ister.</p>
+              <p>Ne zaman bırakacağını, ne zaman yeniden başlayacağını ay belirler.</p>
+            </div>
+            <a href="">Button</a>
+          </div>
+          <div class="Tarot-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <img src="/img/burclar/Tarot-Card-İmg-2.png">
+            <div class="Tarot-Card-Text-Content">
+              <h2>Kadim Bilginin Anahtarı</h2> 
+              <p>Gizli bir düzenin parçasısın. </p>
+              <p> Bu kart, yaşananların rastlantı değil, evrensel bir planın sonucu olduğunu hatırlatır.</p>
+            </div>
+            <a href="">Button</a>
+          </div>
+          <div class="Tarot-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <img src="/img/burclar/Tarot-Card-İmg-3.png">
+            <div class="Tarot-Card-Text-Content">
+              <h2>Kozmik Uyanış</h2> 
+              <p>Ruhun evrenle yeniden hizalanıyor.</p>
+              <p>Bu kart, içindeki potansiyelin sonsuz olduğunu ve artık genişlemeye başladığını simgeler.</p>
+            </div>
+            <a href="">Button</a>
+          </div>
+          <div class="Tarot-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <img src="/img/burclar/Tarot-Card-İmg-4.png">
+            <div class="Tarot-Card-Text-Content">
+              <h2>Güneşin Sözü</h2> 
+              <p>Bu kart, görünür olma ve parlamanın zamanının geldiğini söyler.</p>
+              <p>Kendi ışığını artık başkalarıyla paylaşmaya hazırsın.</p>
+            </div>
+            <a href="">Button</a>
+          </div>
+        </div>
+      </div>
+     </div>
+    </section>
+    <section class="Footer-Section">
+      <footer class="Footer">
+        <div class="container">
+        <div class="Footer-İcons">
+            <a href=""><img src="/img/footer-img/Twitter.png"></a>
+            <a href=""><img src="/img/footer-img/Youtube.png"></a>
+            <a href=""><img src="/img/footer-img/Dc.png"></a>
+            <a href=""><img src="/img/footer-img/Insta.png"></a>
+        </div>
+        <hr id="hr-1">
+        <div class="Footer-Text-Content">
+          <p>"Uzay ve evrenin sırları hala keşfedilmeyi bekliyor. Uzay turizmi belki gelecek nesillerin uzaya gitmesini sağlayacak olsa da şimdilik Dünya dediğimiz büyük mavi küreden oraya bakmakla yetineceğiz.
+          Ancak evrenin derinliklerini görebileceğimiz büyük teleskoplar yüksek çözünürlüklü görüntülerin bize ulaşmasını sağlıyor. Özellikle kış aylarında evden çıkmayanlar bu 6 harika astronomi sitesiyle uzayın derinliklerini keşfedebilir."</p>
+        </div>
+        <hr id="hr-2">
+        <div class="Footer-Menu-All row d-flex align-items-center justify-content-center">
+            <div class="Footer-Gezegenler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+              <h2>Gezegenler</h2>
+              <li><a href="">Dünya</a></li>
+              <li><a href="">Jupiter</a></li>
+              <li><a href="">Mars</a></li>
+              <li><a href="">Merkür</a></li>
+              <li><a href="">Neptün</a></li>
+              <li><a href="">Satürn</a></li>
+              <li><a href="">Uranüs</a></li>
+              <li><a href="">Venüs</a></li>
+            </div>
+            <div class="Footer-Yildizlar-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+              <h2>Yıldızlar</h2>
+              <li><a href="">Güneş</a></li>
+              <li><a href="">Uy-Scuti</a></li>
+              <li><a href="">Alpha Centuari</a></li>
+              <li><a href="">Betelgeuse</a></li>
+              <li><a href="">Canopus</a></li>
+              <li><a href="">La Superba</a></li>
+              <li><a href="">R136A1</a></li>
+              <li><a href="">Rigel</a></li>
+          </div>
+          <div class="Footer-Haberler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+              <h2 class="Footer-Haberler-Menu-h2">Güncel Haberler</h2>
+              <div class="row mb-1">
+                  <div class="Footer-Haberler-Menu-Img-1 col-md-4">
+                     <img src="/img/footer-img/Haber8.jpg">
+                  </div>
+                  <div class="Footer-Haberler-Menu-Content-1 col-md-8">
+                      <h2>Mars'ta su bulundu!!</h2>
+                      <p>31 Temmuz 2008'de NASA'nın Phoenix Mars iniş aracı, Kızıl Gezegen'de
+                      Dünya'daki su ile aynı elementleri içeren ve su buzunun varlığını doğruladı.</p> 
+                      <a href="">Devamı İçin</a>
+                  </div>
+              </div>
+              <div class="row mt-1">
+                  <div class="Footer-Haberler-Menu-Img-2 col-md-4">
+                    <img src="/img/footer-img/Haber1.png">
+                  </div>
+                  <div class="Footer-Haberler-Menu-Content-2 col-md-8">
+                      <h2>Perseverance'nin Yılı</h2>
+                      <p>UPI’nin haberine göre, Mars’ta geçirdiği 1 yıl içerisinde
+                      Perseverance,gezegenin kuzey bölgesindeki Jezero Krateri'nin zemininde 6 kaya örneği de topladı.</p> 
+                      <a href="">Devamı İçin</a>
+                  </div>
+              </div>
+          </div>
+          <div class="Footer-İletisim-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+              <h2>İletişim</h2>
+              <div class="Footer-İletisim-Menu-All">
+                <a href="" class="iletisim-mail"><img src="/img/footer-img/Mail.png">burkkozcnn@gmail.com</a> 
+                <div class="Footer-İletisim-Menu-Img">
+                  <img src="/img/footer-img/Konum.png">
+                </div>
+                  <div class="Footer-İletisim-Menu-Content">
+                    <a class="iletisim-adres" href="#">
+                      Hamidiye Mahallesi, Huzur Sokak,
+                      Osmangazi Caddesi, Kat: 6, No: 13,
+                      İstanbul/Kağıthane
+                    </a> 
+                  </div> 
+              </div> 
+          </div>
+        </div>
+        <hr id="hr-7">
+        <div class="info">
+          <span>" © 2025 Uzay.org - Burak Özcan tarafından yapılmıştır. "</span>
+        </div>
+       </div>
+     </footer>
+    </section>
+    <script src="/Navbar/navbar.js"></script>
+</body>
+</html>

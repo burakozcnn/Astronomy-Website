@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN (ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/img/navbar-img/Galaxy.png">
+    <link rel="stylesheet" href="/Navbar/navbar.css">
+    <link rel="stylesheet" href="/Footer/footer.css">
+    <link rel="stylesheet" href="/yildizlar.css">
+    <title>Astronomy Website</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-sm navbar-dark mt-5 mb-5 pb-3 pt-3" id="Navbar">
+        <div class="container">
+          <a href="/index.html"><img src="/img/navbar-img/Uzay.png" style="max-width: 120px;"></a>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav text-center ms-auto">
+              <li class="nav-item"><a href="/index.html" class="nav-link me-3 ms-3">Anasayfa</a></li>
+              <li class="nav-item">
+                <a href="/galaksiler.html" class="nav-link me-3 ms-3 d-flex align-items-center justify-content-center">
+                  Galaksiler
+                  <i id="dropdownIcon" class="ms-2 dropdown-arrow fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-list">
+                  <li><a href="/gezegenler.html" class="nav-link">Gezegenler</a></li>
+                  <hr>
+                  <li><a href="/yildizlar.html" class="nav-link active">Yıldızlar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="/guncelhaberler.html" class="nav-link me-3 ms-3">Güncel Haberler</a></li>
+              <li class="nav-item"><a href="/burclar.html" class="nav-link me-3 ms-3">Burçlar</a></li>
+              <li class="nav-item user-dropdown">
+                <a class="nav-link me-3 ms-3 user-icon">
+                  <i class="fa-solid fa-user fa-lg"></i>
+                </a>
+                <ul class="dropdown-uyelik-list">
+                  <li><a href="/uyeol.html" class="nav-link">Register</a></li>
+                  <hr>
+                  <li><a href="/uyegiris.html" class="nav-link">Login</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </div>
+    <section class="Yildizlar-Banner">
+        <div class="Yildizlar-Text-Content">
+            <h2>Yıldızlar</h2>
+        </div>
+    </section>
+    <section class="Yildizlar-Card-All">
+        <div class="container">
+            <div class="row mb-4 d-flex justify-content-center align-items-center">
+                <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                    <div class="Yildizlar-Card-Inner">
+                        <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-1">
+                            <h2>AlphaCentauri</h2>
+                        </div>
+                        <div class="Yildizlar-Card-Back">
+                            <p>
+                              Alfa Centauri, Erboğa takımyıldızının güneyinde bulunan bir yıldız sistemidir. Sistem üç yıldızdan oluşur: Rigil Kentaurus (Alfa Centauri A), Toliman (B) ve Proxima Centauri (C).
+                              Proxima Centauri, 4,2465 ışık yılı (1,3020 pc) uzaklığıyla aynı zamanda Güneş'e en yakın yıldızdır.
+                              Alfa Centauri A ve B, sırasıyla  Güneş benzeri yıldızlardır ve birlikte Alfa Centauri AB ikili yıldız sistemini oluştururlar.
+                              Çıplak gözle bakıldığında bu iki ana bileşen, -0,27 görünür büyüklük ile tek bir yıldız gibi görünür.
+                              Takımyıldızının en parlak yıldızı olan Alfa Centauri, Sirius ve Canopus'dan sonra gece gökyüzündeki en parlak üçüncü yıldızdır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                  <div class="Yildizlar-Card-Inner">
+                      <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-2">
+                          <h2>Betelgeuse</h2>
+                      </div>
+                      <div class="Yildizlar-Card-Back">
+                          <p>
+                             Betelgeuse, Avcı Takımyıldızı'nda yer alan kırmızı dev yıldızdır. Samanyolu'nda yer alan Betelgeuse, mavi dev Rigel'den sonra Avcı Takımyıldızı'nın en parlak ikinci yıldızıdır.
+                             Takımyıldızın ortasında ise avcı Avcı kuşağı'nı oluşturan üç parlak mavi yıldız (Alnitak, Alnilam ve Mintaka) yer alır.
+                             Betelgeuse, gökyüzünün en parlak iki kırmızı devinden biridir. Öteki Antares'tir. Ayrıca, görülebilecek en büyük yıldızlardan da biridir;
+                             Betelgeuse, gökyüzünün genellikle en parlak 11. yıldızıdır. Sıcaklığı ortalama 3.600 Kelvin derece olan kırmızı dev yıldızdır.
+                             Yıldızın Dünya'dan uzaklığının 400 ile 700 ışık yılı arasındadır. Ve Güneş'in çapının 600 katı olduğu hesaplanmıştır.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+                <div class="Yildizlar-Card-Inner">
+                    <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-3">
+                        <h2>Canopus</h2>
+                    </div>
+                    <div class="Yildizlar-Card-Back">
+                        <p>
+                          Canopus (α Car / α Carinae / Alfa Carinae) Karina takımyıldızının güneyinde yer alan en parlak ve gökyüzünün de ikinci en parlak yıldızdır.
+                          Güneş'ten 310  ışık yılı uzaklıktaki Canopus, A9 spektral tipinde parlak bir devdir , bu nedenle çıplak gözle bakıldığında esasen beyazdır.
+                          Güneş'in parlaklığından 10.000 kat daha fazla parlaklığa sahiptir , dokuz ila on kat daha kütlelidir ve Güneş'in yarıçapının 71 katına kadar genişlemiştir.
+                          Canopus'un belirgin görünümü, birçok antik halk arasında mitolojik bilginin konusu olduğu anlamına gelir. Asıl adının genellikle Sparta kralı Menelaus'un denizcisi olan mitolojik Canopus'tan geldiği düşünülür.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Yildizlar-Card-Inner">
+                  <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-4">
+                      <h2>Güneş</h2>
+                  </div>
+                  <div class="Yildizlar-Card-Back">
+                      <p>
+                        Güneş, Güneş Sistemi'nin merkezinde yer alan bir yıldızdır. Çekirdeğindeki nükleer füzyon reaksiyonları ile akkor hale gelene kadar ısınan, ışık ve kızılötesi radyasyon olarak yüzeyinden enerji yayan, oldukça büyük ve sıcak bir plazma küresidir.
+                        Dünya'daki yaşam için açık ara en önemli enerji kaynağıdır. Güneş birçok kültürde kutsallık atfedilen bir nesne olmuştur. Antik çağlardan beri astronomik araştırmalar için merkezi bir konudur.
+                        Kütlesinin %74'ü hidrojen, %24-25'ü ise helyumdan oluşmakta olup, kütlenin geri kalanı daha ağır olan demir, nikel, oksijen, silikon, kükürt, magnezyum, karbon, neon, kalsiyum ve krom gibi diğer elementlerden oluşur.
+                      </p>
+                  </div>
+              </div>
+           </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center align-items-center">
+          <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+              <div class="Yildizlar-Card-Inner">
+                  <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-5">
+                      <h2>La-Superba</h2>
+                  </div>
+                  <div class="Yildizlar-Card-Back">
+                      <p>
+                        La Superba, Canes Venatici takımyıldızında bulunan dikkat çekici derecede kırmızı bir dev yıldızdır . Çıplak gözle belli belirsiz görülebilir ve kırmızı rengi dürbünle bakıldığında çok belirgindir. Bir karbon yıldızı ve yarı düzenli değişkendir.
+                        La Superba , yaklaşık 160 günlük bir döngü boyunca yaklaşık bir kadir değişen , ancak daha geniş bir aralıkta daha yavaş bir değişim gösteren yarı düzenli bir değişken yıldızdır.
+                        Y CVn bilinen en kırmızı yıldızlardan biridir ve dev kırmızı karbon yıldızlarının en parlakları arasındadır . Çok miktarda karbon-13 içeren çok nadir bir karbon yıldızı kategorisi olan bilinen J yıldızlarının en parlağıdır.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <div class="Yildizlar-Card-Inner">
+                <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-6">
+                    <h2>R136A1</h2>
+                </div>
+                <div class="Yildizlar-Card-Back">
+                    <p>
+                      R136a1 , bilinen en büyük ve en parlak yıldızlardan biridir . R136'nın merkezinde bir Wolf-Rayet yıldızıdır.
+                      R136, Tarantula bulutsusunda bulunan büyük NGC 2070 açık kümesinin merkezi yıldız grubudur.
+                      Bulutsu, Büyük Macellan Bulutu'nda yaklaşık 50 kiloparsek (163.000 ışık yılı ) uzaklıkta yer alır.
+                      R136a1 , Güneş'in kütlesinin neredeyse 200 katı ve parlaklığının 4,7 milyon katıdır . Ayrıca 50.000 K'nin üzerinde en sıcak kümelerden biridir.
+                      Küme yalnızca yaklaşık 1,5 milyon yaşındadır ve muazzam miktarda enerji yaymaktadır. Birlikte, Güneş'imizi 30 milyon kat geride bırakmaktadırlar.
+                      Yıldız, kümedeki dokuz büyük yıldızın en büyüğüdür.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="Yildizlar-Card-Inner">
+              <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-7">
+                  <h2>Rigel</h2>
+              </div>
+              <div class="Yildizlar-Card-Back">
+                  <p>
+                    Rigel, Orion takımyıldızında bulunan mavi bir süperdev yıldızdır. Bayer tanımı β Orionis'tir , Latince'de Beta Orionis olarak geçer ve Beta Ori veya β Ori olarak kısaltılır.
+                    Rigel, çıplak gözle tek bir mavi-beyaz ışık noktası olarak görünen en az dört yıldızdan oluşan bir yıldız sisteminin en parlak ve en büyük bileşenidir ve adını da buradan alır. Bu sistem yaklaşık 850 ışık yılı uzaklıkta yer almaktadır.
+                    Güneş'ten 61.500 ila 363.000 kat daha parlak ve 18 ila 24 kat daha kütleli olduğu hesaplanmıştır. Yarıçapı Güneş'inkinden yetmiş kat daha fazladır ve yüzey sıcaklığı 12.100 K Yıldız rüzgarı nedeniyle Rigel'in kütle kaybının Güneş'in on milyon katı olduğu tahmin ediliyor.
+                  </p>
+              </div>
+          </div>
+       </div>
+       <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+          <div class="Yildizlar-Card-Inner">
+             <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-8">
+                <h2>UY-Scuti</h2>
+             </div>
+             <div class="Yildizlar-Card-Back">
+                <p>
+                  UY Scuti Scutum takımyıldızında 5.900 ışık yılı uzaklıkta bulunan kırmızı bir süperdev yıldızdır. Ayrıca, çıplak gözle görülemeyecek kadar sönük olan titreşen bir değişken yıldızdır.
+                  güneş yarıçapı (632 milyon kilometre) olarak tahmin edilen yarıçapı ile bilinen en büyük yıldızlardan biri olarak kabul edilir. dolayısıyla hacmi Güneş'inkinin 750 milyon katıdır. 
+                  UY Scuti, A tipi yıldız Gama Scuti'nin birkaç derece kuzeyinde ve Kartal Bulutsusu'nun kuzeydoğusunda yer almaktadır. Yıldız çok parlak olmasına rağmen, uzaklığı ve Kuğu yarığı içindeki Kaçınma Bölgesi'ndeki konumu nedeniyle, Dünya'dan bakıldığında en parlak haliyle yalnızca 9'uncu büyüklüktedir.
+                </p>
+             </div>
+          </div>
+         </div>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center align-items-center">
+          <div class="Yildizlar-Card mb-3 col-sm-12 col-md-6 col-lg-3">
+            <div class="Yildizlar-Card-Inner">
+                <div class="Yildizlar-Card-Front" id="Yildizlar-Card-Front-9">
+                    <h2>Vega</h2>
+                </div>
+                <div class="Yildizlar-Card-Back">
+                    <p>
+                      Vega, kuzey takımyıldızı Lyra'nın en parlak yıldızıdır. Bayer tanımı α Lyrae'dir , bu Latince'de Alpha Lyrae olarak yazılır ve Alpha Lyr veya α Lyr olarak kısaltılır.
+                      Bu yıldız Güneş'e sadece 25 ışık yılı uzaklıkta nispeten yakındır ve Güneş'in komşuluğundaki en parlak yıldızlardan biridir. Gece göğündeki beşinci en parlak yıldız ve Arcturus'tan sonra kuzey gök yarımküresindeki ikinci en parlak yıldızdır.
+                      Vega, Güneş'in yaşının yalnızca onda biri kadardır, ancak 2,1 kat daha büyük olduğundan beklenen ömrü de Güneş'inkinin onda biridir; her iki yıldız da şu anda ana dizi ömürlerinin orta noktasına yaklaşmaktadır.
+                      Vega, değişken yani parlaklığı dalgalanan bir yıldızdır.
+                    </p>
+                </div>
+             </div>
+          </div>
+        </div>
+       </div>
+    </section>
+    <section class="Footer-Section">
+        <footer class="Footer">
+          <div class="container">
+          <div class="Footer-İcons">
+              <a href=""><img src="/img/footer-img/Twitter.png"></a>
+              <a href=""><img src="/img/footer-img/Youtube.png"></a>
+              <a href=""><img src="/img/footer-img/Dc.png"></a>
+              <a href=""><img src="/img/footer-img/Insta.png"></a>
+          </div>
+          <hr id="hr-1">
+          <div class="Footer-Text-Content">
+            <p>"Uzay ve evrenin sırları hala keşfedilmeyi bekliyor. Uzay turizmi belki gelecek nesillerin uzaya gitmesini sağlayacak olsa da şimdilik Dünya dediğimiz büyük mavi küreden oraya bakmakla yetineceğiz.
+            Ancak evrenin derinliklerini görebileceğimiz büyük teleskoplar yüksek çözünürlüklü görüntülerin bize ulaşmasını sağlıyor. Özellikle kış aylarında evden çıkmayanlar bu 6 harika astronomi sitesiyle uzayın derinliklerini keşfedebilir."</p>
+          </div>
+          <hr id="hr-2">
+          <div class="Footer-Menu-All row d-flex align-items-center justify-content-center">
+              <div class="Footer-Gezegenler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Gezegenler</h2>
+                <li><a href="">Dünya</a></li>
+                <li><a href="">Jupiter</a></li>
+                <li><a href="">Mars</a></li>
+                <li><a href="">Merkür</a></li>
+                <li><a href="">Neptün</a></li>
+                <li><a href="">Satürn</a></li>
+                <li><a href="">Uranüs</a></li>
+                <li><a href="">Venüs</a></li>
+              </div>
+              <div class="Footer-Yildizlar-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>Yıldızlar</h2>
+                <li><a href="">Güneş</a></li>
+                <li><a href="">Uy-Scuti</a></li>
+                <li><a href="">Alpha Centuari</a></li>
+                <li><a href="">Betelgeuse</a></li>
+                <li><a href="">Canopus</a></li>
+                <li><a href="">La Superba</a></li>
+                <li><a href="">R136A1</a></li>
+                <li><a href="">Rigel</a></li>
+            </div>
+            <div class="Footer-Haberler-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2 class="Footer-Haberler-Menu-h2">Güncel Haberler</h2>
+                <div class="row mb-1">
+                    <div class="Footer-Haberler-Menu-Img-1 col-md-4">
+                      <img src="/img/footer-img/Haber8.jpg">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-1 col-md-8">
+                        <h2>Mars'ta su bulundu!!</h2>
+                        <p>31 Temmuz 2008'de NASA'nın Phoenix Mars iniş aracı, Kızıl Gezegen'de
+                        Dünya'daki su ile aynı elementleri içeren ve su buzunun varlığını doğruladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="Footer-Haberler-Menu-Img-2 col-md-4">
+                      <img src="/img/footer-img/Haber1.png">
+                    </div>
+                    <div class="Footer-Haberler-Menu-Content-2 col-md-8">
+                        <h2>Perseverance'nin Yılı</h2>
+                        <p>UPI’nin haberine göre, Mars’ta geçirdiği 1 yıl içerisinde
+                        Perseverance,gezegenin kuzey bölgesindeki Jezero Krateri'nin zemininde 6 kaya örneği de topladı.</p> 
+                        <a href="">Devamı İçin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Footer-İletisim-Menu mb-4 col-sm-12 col-md-6 col-lg-3">
+                <h2>İletişim</h2>
+                <div class="Footer-İletisim-Menu-All">
+                  <a href="" class="iletisim-mail"><img src="/img/footer-img/Mail.png">burkkozcnn@gmail.com</a> 
+                  <div class="Footer-İletisim-Menu-Img">
+                    <img src="/img/footer-img/Konum.png">
+                  </div>
+                    <div class="Footer-İletisim-Menu-Content">
+                      <a class="iletisim-adres" href="#">
+                        Hamidiye Mahallesi, Huzur Sokak,
+                        Osmangazi Caddesi, Kat: 6, No: 13,
+                        İstanbul/Kağıthane
+                      </a> 
+                    </div> 
+                </div> 
+            </div>
+          </div>
+          <hr id="hr-7">
+          <div class="info">
+            <span>" © 2025 Uzay.org - Burak Özcan tarafından yapılmıştır. "</span>
+          </div>
+         </div>
+       </footer>
+    </section>
+    <script src="/Navbar/navbar.js"></script>
+</body>
+</html>

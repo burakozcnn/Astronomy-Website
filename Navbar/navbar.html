@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN (ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="/img/navbar-img/Galaxy.png">
+    <link rel="stylesheet" href="/Navbar/navbar.css">
+    <title>Astronomy Website</title>
+</head>
+<body>
+  <div class="navbar navbar-expand-sm navbar-dark mt-5 mb-5 pb-3 pt-3" id="Navbar">
+    <div class="container">
+      <a href="/index.html"><img src="/img/navbar-img/Uzay.png" style="max-width: 120px;"></a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item"><a href="/index.html" class="nav-link active me-3 ms-3">Anasayfa</a></li>
+          <li class="nav-item">
+            <a href="/galaksiler.html" class="nav-link me-3 ms-3 d-flex align-items-center justify-content-center">
+              Galaksiler
+              <i id="dropdownIcon" class="ms-2 dropdown-arrow fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-list">
+              <li><a href="/gezegenler.html" class="nav-link">Gezegenler</a></li>
+              <hr>
+              <li><a href="/yildizlar.html" class="nav-link">Yıldızlar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="/guncelhaberler.html" class="nav-link me-3 ms-3">Güncel Haberler</a></li>
+          <li class="nav-item"><a href="/burclar.html" class="nav-link me-3 ms-3">Burçlar</a></li>
+          <li class="nav-item user-dropdown">
+            <a class="nav-link me-3 ms-3 user-icon">
+              <i class="fa-solid fa-user fa-lg"></i>
+            </a>
+            <ul class="dropdown-uyelik-list">
+              <li><a href="/uyeol.html" class="nav-link">Register</a></li>
+              <hr>
+              <li><a href="/uyegiris.html" class="nav-link">Login</a></li>
+            </ul>
+          </li>          
+        </ul>
+      </div>
+     </div>
+    </div> 
+    <script src="/Navbar/navbar.js"></script>
+</body>
+</html>

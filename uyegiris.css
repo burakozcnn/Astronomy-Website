@@ -1,0 +1,261 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/uyegiris-page/Uyegiris-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.Uyegiris-Banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/uyegiris-page/Uyegiris-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.Uyegiris-Banner .Uyegiris-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Uyegiris-Banner .Uyegiris-Text-Content h2{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.Uyegiris-Card-All{
+    margin-top: 50px;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Header{
+   width: 500px;
+   height: 200px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   box-shadow: 0px 0px 8px 4px rgba(239, 167, 101, 0.75);
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   padding-left: 0px;
+   padding-right: 0px;
+   z-index: 1;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Header:hover .Uyegiris-Card-Img{
+   transform: scale(1.2);
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Header .Uyegiris-Card-Img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/img/uyegiris/Uyegiris-Card-Img-Bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Header .Uyegiris-Card-Img h2{
+    color: wheat;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    cursor: default;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.75);
+    background-image: url(/img/uyegiris/Uyegiris-Card-Content-Bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation: 30s uyegiris-right-to-left linear infinite alternate;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@keyframes uyegiris-right-to-left {
+    0%{
+      background-position-x: 100%;
+    }
+    100%{
+        background-position-x: 0%;
+    }
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form #Mail-Icon{
+   position: relative;
+   top: 20px;
+   right: 160px;
+   color: #FFD43B;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form #Password-Icon{
+    position: relative;
+    top: 20px;
+    right: 160px;
+    color: #FFD43B;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form input{
+    width: 350px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    padding: 6px 0px;
+    text-align: center; 
+    background-color: transparent;
+    color: wheat;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form input:hover{
+    background-color: #171718;
+    border-bottom-color: #efa765;
+    border-top-color: #efa765;
+    border-right-color: #efa765;
+    border-left-color: #efa765;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form input::placeholder{
+    color: #ffffff;
+    font-weight:400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Help{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Help span input{
+    width: 13px;
+    height: 13px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Help a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Info a{
+    text-decoration: none;
+    margin-top: 15px;
+    color:wheat;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Info #form-submit-btn{
+    padding: 6px;
+    width: 220px;
+    margin-bottom: 15px;
+    color: #efa765;
+    background-color: #171718;
+    border: 1px solid #efa765;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Uyegiris-Card-All .Uyegiris-Card-Content form .Uyegiris-Card-Info #form-submit-btn:hover{
+    background-color: #efa765;
+    color: #ffffff;
+}
+
+@media (max-width:768px) {
+    
+    .Uyegiris-Card-All .Uyegiris-Card-Header{
+        width: 380px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-shadow: 0px -6px 8px 3px rgba(239, 167, 101, 0.75);
+        z-index: -1;
+    }
+
+    .Uyegiris-Card-All .Uyegiris-Card-Content{
+        width: 380px;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-shadow: 0px 10px 8px 3px rgba(0, 0, 0, 0.75);
+    }
+
+    .Uyegiris-Card-All .Uyegiris-Card-Content form input{
+        width: 300px;
+    }
+
+    .Uyegiris-Card-All .Uyegiris-Card-Content form #Mail-Icon{
+        position: relative;
+        top: 20px;
+        right: 135px;
+    }
+     
+    .Uyegiris-Card-All .Uyegiris-Card-Content form #Password-Icon{
+        position: relative;
+        top: 20px;
+        right: 135px;
+    }
+}

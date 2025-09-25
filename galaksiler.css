@@ -1,0 +1,150 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/galaksiler-page/Galaksiler-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.Galaksiler-Banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/galaksiler-page/Galaksiler-Banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.Galaksiler-Banner .Galaksiler-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Galaksiler-Banner .Galaksiler-Text-Content h2{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.Galaksiler-Card-All {
+    margin-top: 50px;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card:hover .Galaksiler-Card-Inner {
+    transform: rotateY(180deg);
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner
+.Galaksiler-Card-Front,
+.Galaksiler-Card-Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-1 {
+    background-image: url("/img/galaksiler/Andromeda.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-2 {
+    background-image: url("/img/galaksiler/Antennae.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-3 {
+    background-image: url("/img/galaksiler/Messier-64.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-4 {
+    background-image: url("/img/galaksiler/Messier-81.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-5 {
+    background-image: url("/img/galaksiler/NGC-1232.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-6 {
+    background-image: url("/img/galaksiler/NGC-4567_&_4568.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-7 {
+    background-image: url("/img/galaksiler/NGC-6946.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner #Galaksiler-Card-Front-8 {
+    background-image: url("/img/galaksiler/Samanyolu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner .Galaksiler-Card-Front {
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.75) inset;
+    color: white;
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner .Galaksiler-Card-Back {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 14px;
+    text-align:center;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.75);
+}
+
+.Galaksiler-Card-All .Galaksiler-Card .Galaksiler-Card-Inner .Galaksiler-Card-Back p {
+    margin: 0;
+}
+
+
+

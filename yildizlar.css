@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/yıldızlar-page/Yıldızlar-Bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.Yildizlar-Banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/yıldızlar-page/Yıldızlar-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.Yildizlar-Banner .Yildizlar-Text-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Yildizlar-Banner .Yildizlar-Text-Content h2{
+    font-size: 50px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.Yildizlar-Card-All {
+    margin-top: 50px;
+    gap: 10px;
+    padding-bottom: 25px;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card:hover .Yildizlar-Card-Inner {
+    transform: rotateY(180deg);
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner
+.Yildizlar-Card-Front,
+.Yildizlar-Card-Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-1 {
+    background-image: url("/img/yıldızlar/AlphaCentauri.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-2 {
+    background-image: url("/img/yıldızlar/Betelgeuse.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-3 {
+    background-image: url("/img/yıldızlar/Canopus.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-4 {
+    background-image: url("/img/yıldızlar/Güneşş.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-5 {
+    background-image: url("/img/yıldızlar/La-Superba.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-6 {
+    background-image: url("/img/yıldızlar/R136A1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-7 {
+    background-image: url("/img/yıldızlar/Rigel.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-8 {
+    background-image: url("/img/yıldızlar/UY-Scuti.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner #Yildizlar-Card-Front-9 {
+    background-image: url("/img/yıldızlar/Vega.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner .Yildizlar-Card-Front {
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.75) inset;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner .Yildizlar-Card-Back {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transform: rotateY(180deg);
+    font-size: 14px;
+    text-align:center;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.75);
+}
+
+.Yildizlar-Card-All .Yildizlar-Card .Yildizlar-Card-Inner .Yildizlar-Card-Back p {
+    margin: 0;
+}
+
+
+

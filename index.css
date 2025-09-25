@@ -1,0 +1,331 @@
+   
+   *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Index.gif');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        padding-bottom: 30px;
+    }
+
+    .Header .Index-Banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Index-Banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin-top: 200px;
+        filter: grayscale(0.5);
+        clip-path: polygon(
+            10% 0%,         /* sol üstten sonra (kırpılmış) */
+            100% 0%,        /* sağ üst */
+            100% 70%,       /* sağ alttan önce */
+            90% 100%,       /* sağ alt kırpılmış */
+            0% 100%,        /* sol alt */
+            0% 35%          /* sol üst kırpılmış */
+        );
+    }
+
+    .Header .Index-Banner::before{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-image: url('/img/anasayfa-page/Index-Bg.png');
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        animation: 30s bannerloop linear infinite alternate;
+        content: ''; 
+        filter:  drop-shadow(0 0 #ce0c0c);
+    }
+
+    @keyframes bannerloop {
+        0%{
+           background-position-x: 0%;
+        }
+        100%{
+           background-position-x: 100%;
+        }
+    }
+    
+    .Header .Index-Banner .Index-Text-Content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Header .Index-Banner .Index-Text-Content h2{
+        font-size: 50px;
+        color: white;
+        letter-spacing: 5px;
+    }
+
+    .Header .Header-Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .Header .Header-Text h1{
+        color: transparent;
+        font-size: 40px;
+        background:linear-gradient(to left,	#000000,#ffffff,#FF7F00,#FF0000);
+        background-clip: text;
+        display: inline;
+        animation: 4s linear textloop infinite;
+        margin-bottom: 30px;
+    }
+
+    @keyframes textloop {
+        to{  
+          background-position-x:800px;
+        }
+    }
+
+    .Header .Header-Text a{
+        position: relative;
+        padding: 10px;
+        border:2px solid whitesmoke;
+        margin-bottom: 0px;
+        z-index: 1;
+    }
+
+    .Header .Header-Text a h2{
+        padding: 2px 10px 2px 10px;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px;
+        color: #d47210;
+    }
+
+    .Header .Header-Text a:hover:before{
+        width: 100%;
+    }
+
+    .Header .Header-Text a::before{
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 0%;
+        background-color:rebeccapurple;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        transition: all 1s;
+    }
+
+    .Header .Header-Card-Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .Header .Header-Card-Text h1{
+        color: transparent;
+        font-size: 40px;
+        background:linear-gradient(to left,	#000000,#ffffff,#FF7F00,#FF0000);
+        background-clip: text;
+        display: inline;
+        animation: 4s linear textloop infinite;
+    }
+
+    .Header .container .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+    
+    .Header .Index-Card {
+        height: 320px;
+        border-radius: 30px;
+        overflow: hidden;
+        padding: 0px!important;
+    }
+    
+    .Header .Index-Card .Index-Card-bg-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Dünya-Card.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    .Header .Index-Card .Index-Card-bg-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Mars-Card.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    .Header .Index-Card .Index-Card-bg-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Alpha-Centuari-Card.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    .Header .Index-Card .Index-Card-bg-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('/img/anasayfa-page/Canopus-Card.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    .Header .Index-Card:hover .Index-Card-bg-1 {
+        transform: scale(1.1);
+    }
+    .Header .Index-Card:hover .Index-Card-bg-2 {
+        transform: scale(1.1);
+    }
+    .Header .Index-Card:hover .Index-Card-bg-3 {
+        transform: scale(1.1);
+    }
+    .Header .Index-Card:hover .Index-Card-bg-4 {
+        transform: scale(1.1);
+    }
+    
+    .Header .Index-Card .Index-Card-Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items :center;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        transform: scale(0.90);
+        transform-origin: center center;
+        transition: transform 0.4s ease;
+        will-change: transform;
+    }
+    
+    .Header .Index-Card:hover .Index-Card-Content{
+        transform: scale(1);
+    }
+    
+    .Header .Index-Card .Index-Card-Content h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+        color:#FF7F00;
+    }
+    
+    .Header .Index-Card  .Index-Card-Content p {
+        font-size: 14px;
+        color: white;
+        margin: 0;
+        text-wrap:balance;
+    }
+    
+    .Header .Index-Card  .Index-Card-Content a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border: 1px solid whitesmoke;
+        color: whitesmoke;
+        text-decoration: none;
+        margin-top: 24px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .Header .Index-Card  .Index-Card-Content a::before {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 0%;
+        background-color:rebeccapurple;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        transition: all 1s;
+    }
+
+    .Header .Index-Card .Index-Card-Content a:hover:before {
+        width: 100%;  
+    }
+    
+    /* Responsive */
+    @media screen and (max-width: 1200px) {
+        .Header .container .row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .Header .container .row {
+            grid-template-columns: 1fr;
+            margin: 0 10px;
+        }
+    
+        .Header .Index-Card:last-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width:768px){
+        .Header .Index-banner{
+           clip-path: none;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+
+    
+    

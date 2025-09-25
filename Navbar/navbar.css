@@ -1,0 +1,218 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#Navbar {
+  border-radius: 40px;
+  box-shadow: 0px 0px 12px 8px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+#Navbar .container #nav ul li a.active{
+  color: #FFA35A;
+}
+
+#Navbar ul li a {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  padding: 8px 0px!important;
+  transition: all 0.8s!important;
+  text-align: center;
+  font-weight:500;
+  position: relative;
+}
+
+#Navbar ul li a::before {
+  position: absolute;
+  content: '';
+  height: 4%;
+  width: 0%;
+  bottom: 10%;
+  left: 0%;
+  background-color: #FFA35A;
+  transition: all 0.8s;
+}
+
+#Navbar ul li a:hover::before {
+  width: 100%;
+}
+
+#Navbar ul li a:hover {
+  color: #FFA35A;
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list li a::before {
+  display: none;
+  content: none;
+  height: 0%;
+  width: 0%;
+}
+
+#Navbar ul li:nth-child(5) .user-icon::before{
+  display: none;
+  content: none;
+  height: 0%;
+  width: 0%;
+}
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list li a::before {
+  display: none;
+  content: none;
+  height: 0%;
+  width: 0%;
+}
+
+#Navbar ul li:nth-child(2):hover .dropdown-list {
+  display: block;
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list {
+  background-image: url('/img/navbar-img/Dropdown-Bg.png');
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  position: absolute;
+  display: none;
+  min-width: 135px;
+  padding-left: 0;
+  box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.25);
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list li {
+  list-style-type: none;
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list li a {
+  padding: 8px 12px!important;
+  text-decoration: none;
+  border-bottom: none!important;
+  transition: all 0.5s!important;
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list li a:hover {
+  margin-left: 10px;
+}
+
+#Navbar ul li:nth-child(2) .dropdown-list hr {
+  width: 100%;
+  margin: 0px;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+@media (max-width: 768px) {
+  #Navbar ul li:nth-child(2) .dropdown-list {
+    background-color: #000000;
+    position: static;
+    padding-left: 0;
+    box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+
+  #Navbar ul li:nth-child(2) .dropdown-list.show-dropdown {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    max-height: 500px;
+  }
+  
+  #Navbar ul li:nth-child(2) a:first-child i{
+    margin-left: 0.2rem!important;
+    font-size: 12px;
+  }
+
+  #Navbar .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #Navbar ul li:nth-child(5) .dropdown-uyelik-list {
+    position: static;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  #Navbar ul li:nth-child(5) .dropdown-uyelik-list.show-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+    max-height: 500px;
+  }
+
+}
+
+.dropdown-arrow {
+   transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate-up {
+   transform: rotate(180deg);
+}
+
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list {
+  background-image: url('/img/navbar-img/Dropdown-Bg.png');
+  background-size: 80%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  position: absolute;
+  display: none;
+  box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, 0.25);
+  min-width: 105px;
+  padding-left: 0px;
+  top: 100%;          
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list li a {
+  padding: 0px!important;
+  text-decoration: none;
+  border-bottom: none!important;
+  transition: all 0.5s!important;
+}
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list li a:hover {
+  margin-left: 10px;
+}
+
+#Navbar ul li:nth-child(5) .dropdown-uyelik-list hr {
+  width: 100%;
+  margin: 0px;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+#Navbar ul li:nth-child(5):hover .dropdown-uyelik-list {
+  display: block;
+}
+
+#Navbar ul li:nth-child(5) {
+  position: relative;
+}
+
+#Navbar ul li:nth-child(5) .user-icon i{
+  color: #ffffff!important;
+}
